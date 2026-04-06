@@ -31,26 +31,45 @@ Just place your project → run → get APK.
 
 🧩 How It Works
 
-Place your Kivy project inside the project/ folder:
+1️⃣ Open BuildDroid Elite.exe
+When you launch it for the first time, it will automatically run a one-time setup to prepare the full Linux + Buildozer environment.
 
-/BuildDroid-Elite
-    /project
-        main.py
-        buildozer.spec
+2️⃣ Select your project folder
+Choose the folder where your Kivy project is located.
+Your project should contain at least:
 
-Then run:
+/YourProject
+    main.py
+    buildozer.spec
 
-python build.py
+3️⃣ Edit app details (optional)
+If you want, you can change:
 
-Within minutes, your APK appears in:
+App Name
+Package Name
+Version
+Icon
+Any Buildozer settings
 
-/bin/
+All changes are applied automatically.
 
+4️⃣ Start the build
+Just click Start Build.
+BuildDroid Elite handles everything—SDK, NDK, dependencies, Buildozer, compiling, packaging.
+
+5️⃣ Get your APK
+After the build completes, your APK will appear inside your project folder:
+
+/YourProject
+    /bin
+        your_app.apk
+
+That’s it — no configuration, no Linux setup, no commands.
 
 🛠 Installation
-git clone https://github.com/anupamkayal/BuildDroid-Elite
-cd BuildDroid-Elite
-run_builddroid.bat
+Download the software from the Releases section.
+Install it on your computer like any normal Windows application.
+Once the installation is complete, just open the app and start using it — no extra setup needed.
 
 All dependencies (Buildozer + SDK + NDK) are initialized automatically.
 
@@ -58,9 +77,7 @@ All dependencies (Buildozer + SDK + NDK) are initialized automatically.
 BuildDroid-Elite/
  ├── project/            # Place your Kivy app here
  ├── bin/                # APK output folder
- ├── linux/              # Preconfigured environment
- ├── build.py            # Build script
- └── run_builddroid.bat  # Launcher
+ 
 
 
 🧪 Example App
