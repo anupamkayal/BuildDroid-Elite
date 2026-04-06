@@ -54,10 +54,12 @@ Any Buildozer settings
 All changes are applied automatically.
 
 4️⃣ Start the build
+
 Just click Start Build.
 BuildDroid Elite handles everything—SDK, NDK, dependencies, Buildozer, compiling, packaging.
 
 5️⃣ Get your APK
+
 After the build completes, your APK will appear inside your project folder:
 
 /YourProject
@@ -67,6 +69,7 @@ After the build completes, your APK will appear inside your project folder:
 That’s it — no configuration, no Linux setup, no commands.
 
 🛠 Installation
+
 Download the software from the Releases section.
 Install it on your computer like any normal Windows application.
 Once the installation is complete, just open the app and start using it — no extra setup needed.
@@ -74,6 +77,7 @@ Once the installation is complete, just open the app and start using it — no e
 All dependencies (Buildozer + SDK + NDK) are initialized automatically.
 
 📂 Folder Structure
+
 BuildDroid-Elite/
  ├── project/            # Place your Kivy app here
  ├── bin/                # APK output folder
@@ -81,6 +85,7 @@ BuildDroid-Elite/
 
 
 🧪 Example App
+
 from kivy.app import App
 from kivy.uix.label import Label
 
